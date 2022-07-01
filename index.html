@@ -4,41 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 id="title">Ushaurike Survey Form</h1>
-<p id="description">Happy to get your feedback, to make improvements on the platfrom</p>
-<form id="survey-form">
-  <label for ="name" id="name-label">Name </label>
-  <input id="name" type="text" placeholder="Enter your name" required><br><br>
-    <label for ="email" id="email-label">Email </label>
-  <input id="email" type="email" placeholder="Enter your email" required><br><br>
-    <label for ="number" id="number-label">Age (optional) </label>
-  <input id="number" pattern="[0-9]+" type="number" placeholder="Enter your age"><br><br>
-
- <label for="topic">Choose a topic</label>
-
-<select name="topic" id="dropdown">
-  <option value="relationship">Relationships</option>
-  <option value="mental health">Mental Health</option>
-  <option value="sexuality">Sexuality</option>
-  <option value="religion">Religion</option>
-</select><br><br>
-
-<input type="radio" id="radio-btn" name="post" value="quotes">
-<label for="quotes">Quotes</label><br>
-<input type="radio" id="radio-btn" name="post" value="captions">
-<label for="captions">Captions</label><br>
-<input type="radio" id="radio-btn" name="post" value="meme">
-<label for="meme">Memes</label><br><br>
-
-<label for="comment">Comments</label><br>
-<textarea col="100" rows="10" placeholder="Write your comments here">
-  </textarea>
-  <br><br>
-  <input type="submit" id="submit" value="SUBMIT">
-</form>
+    <h1 id="title">Ushaurike Survey Form</h1>
+    <p id="description">Happy to get your feedback, to make improvements on the platfrom</p>
+    <form id="survey-form">
+      <label for ="name" id="name-label">Name </label>
+      <input id="name" type="text" placeholder="Enter your name" required><br><br>
+        <label for ="email" id="email-label">Email </label>
+      <input id="email" type="email" placeholder="Enter your email" required><br><br>
+        <label for ="number" id="number-label">Age (optional) </label>
+      <input id="number" pattern="[0-9]+" type="number" placeholder="Enter your age"><br><br><br> 
+    
+     <label for="topic">Choose a topic</label>
+    
+    <select name="topic" id="dropdown">
+      <option value="relationship">Relationships</option>
+      <option value="mental health">Mental Health</option>
+      <option value="sexuality">Sexuality</option>
+      <option value="religion">Religion</option>
+    </select><br><br>
+    <br>
+    <div class="radio-btn">
+    <label for="sub">Choose your type of post</label>
+    <input type="radio" id="radio-btn" name="post" value="quotes">
+    <label for="quotes">Quotes</label><br>
+    <input type="radio" id="radio-btn" name="post" value="captions">
+    <label for="captions">Captions</label><br>
+    <input type="radio" id="radio-btn" name="post" value="meme">
+    <label for="meme">Memes</label><br><br>
+    </div>
+    
+    <br>
+    <label for="comment">Comments</label><br>
+    <textarea col="100" rows="10" placeholder="Write your comments here">
+      </textarea>
+      <br>
+      <input type="submit" id="submit" value="SUBMIT">
+    </form>
 </body>
 </html>
