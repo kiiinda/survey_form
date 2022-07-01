@@ -15,7 +15,7 @@
       <input id="name" type="text" placeholder="Enter your name" required><br><br>
         <label for ="email" id="email-label">Email </label>
       <input id="email" type="email" placeholder="Enter your email" required><br><br>
-        <label for ="number" id="number-label">Age (optional) </label>
+        <label for ="number" id="number-label" max="80" min="18">Age (optional) </label>
       <input id="number" pattern="[0-9]+" type="number" placeholder="Enter your age"><br><br><br> 
     
      <label for="topic">Choose a topic</label>
@@ -28,7 +28,7 @@
     </select><br><br>
     <br>
     <div class="radio-btn">
-    <label for="sub">Choose your type of post</label>
+    <label for="sub">Choose your type of post</label><br>
     <input type="radio" id="radio-btn" name="post" value="quotes">
     <label for="quotes">Quotes</label><br>
     <input type="radio" id="radio-btn" name="post" value="captions">
@@ -37,6 +37,16 @@
     <label for="meme">Memes</label><br><br>
     </div>
     
+    <br>
+    <label for="ans">
+      Would you recommend this platform to a friend?
+      </label><br>
+    <input type="checkbox" id="ans1" name="ans1" value="yes">
+<label for="yes"> Yes</label><br>
+<input type="checkbox" id="ans2" name="ans2" value="not really">
+<label for="ans2">Not really</label><br>
+<input type="checkbox" id="ans3" name="ans3" value="maybe">
+<label for="ans3"> Maybe</label><br>
     <br>
     <label for="comment">Comments</label><br>
     <textarea col="100" rows="10" placeholder="Write your comments here">
